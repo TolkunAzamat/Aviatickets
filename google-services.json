@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "523764509354",
+    "project_id": "aviatickets-aade0",
+    "storage_bucket": "aviatickets-aade0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523764509354:android:e6ad42ef730c667b98bed3",
+        "android_client_info": {
+          "package_name": "com.example.aviatickets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523764509354-l6cdqt9n7o45j9khg2q1jlf6mk3537c5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA87RjmdydNLOSoHtufB9YI6QuMTivWqu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523764509354-l6cdqt9n7o45j9khg2q1jlf6mk3537c5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

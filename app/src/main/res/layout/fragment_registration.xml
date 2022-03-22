@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RegistrationFragment"
+    android:orientation="vertical"
+    android:background="@drawable/images"
+    android:layout_gravity="center">
+<ImageView
+    android:id="@+id/backtoEntrance"
+    android:layout_width="80dp"
+    android:layout_height="40dp"
+    android:src="@drawable/ic_twotone_arrow_back_24"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Регистрация"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/userPhone"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="Введите ваш номер"
+        android:textStyle="bold"
+        android:textColorHint="@color/dimGrey"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/reg_edit"
+        android:inputType="phone"
+        android:maxLength="13"/>
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="Введите ваш пароль"
+        android:textStyle="bold"
+        android:textColorHint="@color/dimGrey"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/reg_edit"
+        android:inputType="textPassword"
+       />
+    <Button
+        android:id="@+id/saveUser"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:background="@drawable/reg_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Сохранить"/>
+
+</LinearLayout>

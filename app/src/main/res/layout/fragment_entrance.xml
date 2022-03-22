@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.EntranceFragment"
+    android:background="@drawable/register"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Airtickets"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/aqua"/>
+    <Button
+        android:id="@+id/register"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Регистрация"
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+        android:layout_marginTop="270dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/authoriz"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Уже есть аккаунт?"
+        android:layout_gravity="center"
+        android:background="@drawable/input_design"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+</LinearLayout>
