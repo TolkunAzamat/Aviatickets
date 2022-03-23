@@ -40,13 +40,11 @@ class RegistrationFragment : Fragment() {
                 db?.insertUser(
                     User(
                         idUser = null,
-                        phoneNumber = "5020250",
-                        //binding.userPhone.text.toString(),
-                        password = "Paris"
-                        //binding.userPassword.text.toString()
+                        phoneNumber = binding.userPhone.text.toString(),
+                        password = binding.userPassword.text.toString()
                     ))
 
-                Log.d("DDDD", "${ db?.getAllUsers()?.size }")
+                Log.d("DDDD", "${ db?.getAllUsers() }")
 
             }
         }
