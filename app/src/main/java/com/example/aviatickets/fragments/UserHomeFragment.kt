@@ -5,20 +5,28 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.aviatickets.R
+import com.example.aviatickets.databinding.FragmentAddTicketsBinding
+import com.example.aviatickets.databinding.FragmentUserHomeBinding
 
 
 class UserHomeFragment : Fragment() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
+    private var _binding: FragmentUserHomeBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        return inflater.inflate(R.layout.fragment_user_home, container, false)
+        _binding = FragmentUserHomeBinding.inflate(layoutInflater)
+        return _binding?.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+    binding.addTickets.setOnClickListener {
+        findNavController().navigate(R.id.addTicketsFragment)
+    }
     }
 }

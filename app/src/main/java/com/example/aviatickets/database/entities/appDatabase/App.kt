@@ -15,7 +15,7 @@ class App: Application() {
 
     fun getDatabase(): AppDatabase? {
         return database
-    }
+     }
 
     companion object{
         var instance: App? = null

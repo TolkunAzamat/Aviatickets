@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AdminHomeFragment"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+      <ImageView
+          android:id="@+id/backA"
+          android:layout_width="60dp"
+          android:layout_height="45dp"
+          android:src="@drawable/ic_twotone_arrow_back_24"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Расписание рейсов"
+          android:fontFamily="@font/teddy"
+          android:textSize="30sp"
+          android:layout_gravity="center"/>
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recycleTimeTable"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+          tools:listitem="@layout/item_time_table"/>
+   </LinearLayout>
+   <ImageView
+       android:id="@+id/addTimeTable"
+       android:layout_width="80dp"
+       android:layout_height="80dp"
+       android:src="@drawable/ic_baseline_add_circle_24"
+       android:layout_marginLeft="300dp"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="24dp"/>
+
+</RelativeLayout>

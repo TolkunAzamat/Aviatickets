@@ -34,9 +34,6 @@ class AuthorizationFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val dbUser = App.instance?.getDatabase()?.Dao()
-        val userPhone = dbUser?.getPhoneNumbers()
-        val userPassword = dbUser?.getPasswords()
         binding.btnback.setOnClickListener {
             findNavController().navigate(AuthorizationFragmentDirections.actionAuthorizationFragmentToEntranceFragment())
         }
@@ -50,12 +47,12 @@ class AuthorizationFragment : Fragment() {
                 binding.userPassword.error = "Заполните пароль"
             } else {
                 val phones = App.instance?.getDatabase()?.Dao()?.getUserNumbers(binding.userPhone.text.toString())
-                val password = App.instance?.getDatabase()?.Dao()?.getUserPasswords(binding.userPassword.text.toString())
-                if (phones?.phoneNumber == binding.userPhone.text.toString())
-                //&& password?.password==binding.userPassword.text.toString){ //Если эту строку написать внутри if
-                // он не может найти password который находится в Entity
+                if (phones?.password==binding.userPassword.text.toString()&& phones?.phoneNumber == binding.userPhone.text.toString())
                 {
-                    startActivity(Intent(requireActivity(), UserActivity::class.java))
+                 startActivity(Intent(requireActivity(), UserActivity::class.java))
+                }
+                else {
+                    Toast.makeText(context, "Такой пользователь не найден!!!", Toast.LENGTH_SHORT).show()
                 }
             }
         }

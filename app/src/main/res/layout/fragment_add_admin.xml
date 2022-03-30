@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddAdminFragment"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить расписание рейсов"
+        android:fontFamily="@font/teddy"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/nameflight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Добавьте название рейса"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/addWhence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Добавьте точку отправления"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/addWhere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Добавьте точку назначения"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/addWhatTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Добавьте дату и время отправки"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/addTimeArriving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Добавьте дату и время прибытия"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/addPlaneName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Добавьте название самолета"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Добавьте стоимость билета"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/saveFlights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

@@ -32,7 +32,7 @@
         android:textColorHint="@color/dimGrey"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/reg_edit"
         android:inputType="phone"/>
     <EditText

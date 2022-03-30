@@ -7,14 +7,24 @@
         <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/drawable/button_text_color.xml" value="0.124" />
         <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/drawable/input_design.xml" value="0.124" />
         <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/drawable/reg_button.xml" value="0.124" />
+        <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/drawable/reg_edit.xml" value="0.124" />
+        <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/activity_admin.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/activity_user.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/fragment_aauthorizationragment.xml" value="0.11302083333333333" />
-        <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/fragment_admin_authorization.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/fragment_add_admin.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/fragment_add_tickets.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/fragment_admin_authorization.xml" value="0.25" />
+        <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/fragment_admin_home.xml" value="0.20199275362318841" />
         <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/fragment_authorization.xml" value="0.2" />
         <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/fragment_entrance.xml" value="0.2" />
+        <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/fragment_receipt.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/fragment_registration.xml" value="0.152" />
-        <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/fragment_user_home.xml" value="0.2" />
+        <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/fragment_ticket.xml" value="0.264" />
+        <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/fragment_user_home.xml" value="0.4" />
+        <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/item_receipt.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/item_tickets_recycle.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/layout/item_time_table.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tolkun/Documents/GitHub/Aviatickets/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
