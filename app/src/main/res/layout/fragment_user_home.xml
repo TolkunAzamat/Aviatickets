@@ -6,25 +6,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.UserHomeFragment"
     android:orientation="vertical"
-    android:layout_gravity="center">
+    android:layout_gravity="center"
+    android:background="@drawable/fon"
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <ImageView
+        <Button
             android:id="@+id/backA"
-            android:layout_width="60dp"
-            android:layout_height="45dp"
-            android:src="@drawable/ic_twotone_arrow_back_24"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Выйти"
+            android:layout_marginLeft="260dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Мои билеты"
             android:fontFamily="@font/teddy"
             android:textSize="30sp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:textColor="@color/white"/>
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycleTimeTable"
+            android:id="@+id/recycleTicketTable"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

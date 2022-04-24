@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.ReceiptFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
     <ImageView
         android:id="@+id/backU"
         android:layout_width="30dp"

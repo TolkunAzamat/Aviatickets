@@ -56,6 +56,7 @@ class RegistrationFragment : Fragment() {
                             phoneNumber = binding.userPhone.text.toString(),
                             password = binding.userPassword.text.toString()
                         ))
+                    findNavController().navigate(RegistrationFragmentDirections.actionRegistrationFragmentToEntranceFragment())
                 }
             }
         }

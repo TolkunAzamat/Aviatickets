@@ -31,21 +31,30 @@ interface Dao {
     //Flights
     @Insert
     fun insertFlight(flights: Flights)
-    @Query("SELECT departing FROM Flights")
-    fun getDeparting(): List<String>
+    @Query("SELECT arriving FROM Flights where arriving=:arr")
+    fun getArriving(arr:String):String
+
     @Query("SELECT arriving FROM Flights")
-    fun getArriving(): List<String>
-    @Insert
-    fun insertTickets(tickets: Tickets)
+    fun getAllArriving():List<String>
+
+    @Query("SELECT departing FROM Flights")
+    fun getAllDeparting():List<String>
+
+    @Query("SELECT departing FROM Flights where departing=:dep")
+    fun getDeparting(dep:String):String
+
+
     @Delete
     fun deleteCurrent(flights: Flights)
     @Update
     fun updateTicket(flights: Flights)
-    @Query("SELECT * FROM Flights")
+
+    @Query("SELECT * FROM Flights where departing=:dep AND arriving=:arr ")
+    fun getAllFlight(arr: String,dep: String): Flights
+
+    @Query("SELECT * FROM Flights ")
     fun getAllFlights(): List<Flights>
 
-    @Transaction
-    @Query("SELECT * FROM Flights Where idFlights=:idTickets ")
-    fun getAllFlightsWithTickets(idTickets:Int):List<FlightsWithTickets>
+
 
 }

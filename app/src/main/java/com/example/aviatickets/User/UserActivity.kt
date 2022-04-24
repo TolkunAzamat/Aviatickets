@@ -10,6 +10,7 @@ class UserActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         try {
+
             setContentView(R.layout.activity_user)
         } catch (e: Exception) {
             Log.e("UserActivity", e.toString())

@@ -8,7 +8,7 @@ import com.example.aviatickets.database.entities.Dao.Dao
 import com.example.aviatickets.database.entities.entities.*
 import java.util.*
 
-@Database(entities = [User::class,Admin::class,Flights::class,Tickets::class,Class::class], version =6, exportSchema = true)
+@Database(entities = [User::class,Admin::class,Flights::class], version =2, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun Dao(): Dao

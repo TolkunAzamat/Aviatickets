@@ -23,37 +23,16 @@ data class Admin(
     var phoneNumberAdmin: String?,
     var passwordAdmin:String?
         )
-@Entity(foreignKeys = arrayOf(ForeignKey(entity = Flights::class,
-        parentColumns = arrayOf( "idFlights"),
-    childColumns = arrayOf("idTickets"),
-    onDelete = CASCADE)))
-data class Tickets(
-    @PrimaryKey(autoGenerate = true)
-    var idTicket:Int?,
-    var fnamePassengers:String?,
-    var lnamePassengers: String?,
-    var passport:String?,
-    @Embedded
-    var flights: List<String>?,
-    var classes: String?
-)
+
 @Parcelize
 @Entity
 data class Flights(
-    @PrimaryKey(autoGenerate = true)
-    var idFlights:Int?,
-    var flightName:String?,
-    var departing:String?,
-    var arriving:String?,
-    var dateDeparting:Date?,
-    var dateArriving:Date?,
-    var planeName: String?,
+    @PrimaryKey(autoGenerate = true)var idFlights:Int?,
+   var flightName:String?,
+   var departing:String?,
+   var arriving:String?,
+   var dateDeparting:Date?,
+   var dateArriving:Date?,
+   var planeName: String?,
     var price:Int?
 ): Parcelable
-@Entity
-data class Class(
-    @PrimaryKey(autoGenerate = true)
-    var idClass:Int?,
-    var classes:String?
-)
-

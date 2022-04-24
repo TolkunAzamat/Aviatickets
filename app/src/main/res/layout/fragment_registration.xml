@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".fragments.RegistrationFragment"
     android:orientation="vertical"
-    android:background="@drawable/images"
+    android:background="@drawable/fon"
     android:layout_gravity="center">
 <ImageView
     android:id="@+id/backtoEntrance"
@@ -28,7 +28,7 @@
         android:layout_height="60dp"
         android:hint="Введите ваш номер"
         android:textStyle="bold"
-        android:textColorHint="@color/dimGrey"
+        android:textColorHint="@color/white"
         android:layout_gravity="center"
         android:gravity="center"
         android:layout_marginTop="150dp"
@@ -41,7 +41,7 @@
         android:layout_height="60dp"
         android:hint="Введите ваш пароль"
         android:textStyle="bold"
-        android:textColorHint="@color/dimGrey"
+        android:textColorHint="@color/white"
         android:layout_gravity="center"
         android:gravity="center"
         android:layout_marginTop="20dp"

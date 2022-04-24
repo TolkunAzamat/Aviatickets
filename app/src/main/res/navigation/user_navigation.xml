@@ -11,12 +11,21 @@
         android:label="fragment_user_home"
         tools:layout="@layout/fragment_user_home" >
         <action
-            android:id="@+id/action_userHomeFragment_to_addTicketsFragment"
-            app:destination="@id/addTicketsFragment" />
+            android:id="@+id/action_userHomeFragment_to_searchFlightsFragment"
+            app:destination="@id/searchFlightsFragment" />
     </fragment>
     <fragment
         android:id="@+id/addTicketsFragment"
         android:name="com.example.aviatickets.fragments.AddTicketsFragment"
         android:label="fragment_add_tickets"
         tools:layout="@layout/fragment_add_tickets" />
+    <fragment
+        android:id="@+id/searchFlightsFragment"
+        android:name="com.example.aviatickets.fragments.SearchFlightsFragment"
+        android:label="fragment_search_flights"
+        tools:layout="@layout/fragment_search_flights" >
+        <action
+            android:id="@+id/action_searchFlightsFragment_to_addTicketsFragment"
+            app:destination="@id/addTicketsFragment" />
+    </fragment>
 </navigation>

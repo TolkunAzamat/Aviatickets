@@ -12,7 +12,6 @@ import com.example.aviatickets.databinding.FragmentAdminHomeBinding
 class Ticket : Fragment() {
     private var _binding: FragmentAdminHomeBinding? = null
     private val binding get() = _binding!!
-    private val adapterT by lazy { FlightAdapter() }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
